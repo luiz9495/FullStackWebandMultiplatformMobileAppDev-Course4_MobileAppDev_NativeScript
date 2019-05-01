@@ -5,7 +5,7 @@
 <ScrollView orientation="vertical">
     <GridLayout class="m-5" rows="auto auto auto" *ngIf="dish">
         <StackLayout row="0" class="p-10 border">
-            <Image [src]="BaseURL + dish.image"></Image>
+            <Image [src]="baseURL + dish.image"></Image>
             <StackLayout>
                 <Label class="h2" [text]="dish.name"></Label>
                 <Label class="body" [text]="dish.description" textWrap="true"></Label>

@@ -21,7 +21,7 @@ export class DishdetailComponent implements OnInit {
   constructor(private dishservice: DishService,
     private route: ActivatedRoute,
     private routerExtensions: RouterExtensions,
-    @Inject('BaseURL') private BaseURL) { }
+    @Inject('BaseURL') private baseURL) { }
 
   ngOnInit() {
 
