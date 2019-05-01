@@ -4,6 +4,7 @@ import { NativeScriptHttpModule } from "nativescript-angular/http";
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from "./app-routing.module";
 import { NativeScriptUISideDrawerModule } from "nativescript-ui-sidedrawer/angular";
+import { TNSFontIconModule } from 'nativescript-ngx-fonticon';
 
 import { AppComponent } from "./app.component";
 import { HomeComponent } from './home/home.component';
@@ -34,7 +35,10 @@ import { baseURL } from './shared/baseurl';
         AppRoutingModule,
         HttpClientModule,
         NativeScriptHttpModule,
-        NativeScriptUISideDrawerModule
+        NativeScriptUISideDrawerModule,
+        TNSFontIconModule.forRoot({
+    			'fa': './fonts/font-awesome.min.css'
+    		})
     ],
     declarations: [
         AppComponent,
