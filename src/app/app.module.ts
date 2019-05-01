@@ -7,7 +7,9 @@ import { NativeScriptUISideDrawerModule } from "nativescript-ui-sidedrawer/angul
 
 import { AppComponent } from "./app.component";
 import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
 import { MenuComponent } from './menu/menu.component';
+import { ContactComponent } from './contact/contact.component';
 import { DishdetailComponent } from './dishdetail/dishdetail.component';
 
 import { DishService } from './services/dish.service';
@@ -37,7 +39,9 @@ import { baseURL } from './shared/baseurl';
     declarations: [
         AppComponent,
         HomeComponent,
+        AboutComponent,
         MenuComponent,
+        ContactComponent,
         DishdetailComponent
     ],
     providers: [
