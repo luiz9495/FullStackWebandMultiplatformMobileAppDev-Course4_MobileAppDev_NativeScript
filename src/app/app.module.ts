@@ -13,10 +13,11 @@ import { MenuComponent } from './menu/menu.component';
 import { ContactComponent } from './contact/contact.component';
 import { DishdetailComponent } from './dishdetail/dishdetail.component';
 
+import { ProcessHTTPMsgService } from './services/process-httpmsg.service';
 import { DishService } from './services/dish.service';
 import { PromotionService } from './services/promotion.service';
 import { LeaderService } from './services/leader.service';
-import { ProcessHTTPMsgService } from './services/process-httpmsg.service';
+import { FavoriteService } from './services/favorite.service';
 
 import { baseURL } from './shared/baseurl';
 
@@ -49,10 +50,11 @@ import { baseURL } from './shared/baseurl';
         DishdetailComponent
     ],
     providers: [
+      ProcessHTTPMsgService,
       DishService,
       PromotionService,
       LeaderService,
-      ProcessHTTPMsgService,
+      FavoriteService,
       {provide: 'BaseURL', useValue: baseURL}
     ],
     schemas: [
