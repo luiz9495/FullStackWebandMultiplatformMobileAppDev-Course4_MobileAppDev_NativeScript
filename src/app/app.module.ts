@@ -17,6 +17,7 @@ import { ContactComponent } from './contact/contact.component';
 import { FavoritesComponent } from './favorites/favorites.component';
 import { DishdetailComponent } from './dishdetail/dishdetail.component';
 import { ReservationComponent } from './reservation/reservation.component';
+import { ReservationModalComponent } from "./reservationmodal/reservationmodal.component";
 
 import { ProcessHTTPMsgService } from './services/process-httpmsg.service';
 import { DishService } from './services/dish.service';
@@ -57,7 +58,11 @@ import { baseURL } from './shared/baseurl';
         ContactComponent,
         FavoritesComponent,
         DishdetailComponent,
-        ReservationComponent
+        ReservationComponent,
+        ReservationModalComponent
+    ],
+    entryComponents: [
+        ReservationModalComponent
     ],
     providers: [
       ProcessHTTPMsgService,
