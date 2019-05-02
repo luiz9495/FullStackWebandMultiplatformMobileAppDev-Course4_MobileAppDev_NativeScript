@@ -1,10 +1,10 @@
 {
   "nativescript": {
     "id": "org.nativescript.conFusion",
-    "tns-android": {
+    "tns-ios": {
       "version": "5.3.1"
     },
-    "tns-ios": {
+    "tns-android": {
       "version": "5.3.1"
     }
   },
@@ -21,10 +21,12 @@
     "@angular/platform-browser": "~7.2.0",
     "@angular/platform-browser-dynamic": "~7.2.0",
     "@angular/router": "~7.2.0",
+    "ajv": "^6.10.0",
     "font-awesome": "^4.7.0",
     "nativescript-angular": "~7.2.0",
     "nativescript-ngx-fonticon": "^4.2.0",
     "nativescript-theme-core": "~1.0.4",
+    "nativescript-toasty": "^1.1.5",
     "nativescript-ui-listview": "^3.5.9",
     "nativescript-ui-sidedrawer": "^4.1.1",
     "reflect-metadata": "~0.1.12",
