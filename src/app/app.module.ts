@@ -18,6 +18,7 @@ import { FavoritesComponent } from './favorites/favorites.component';
 import { DishdetailComponent } from './dishdetail/dishdetail.component';
 import { ReservationComponent } from './reservation/reservation.component';
 import { ReservationModalComponent } from "./reservationmodal/reservationmodal.component";
+import { CommentComponent } from './comment/comment.component';
 
 import { ProcessHTTPMsgService } from './services/process-httpmsg.service';
 import { DishService } from './services/dish.service';
@@ -59,10 +60,12 @@ import { baseURL } from './shared/baseurl';
         FavoritesComponent,
         DishdetailComponent,
         ReservationComponent,
-        ReservationModalComponent
+        ReservationModalComponent,
+        CommentComponent
     ],
     entryComponents: [
-        ReservationModalComponent
+        ReservationModalComponent,
+        CommentComponent
     ],
     providers: [
       ProcessHTTPMsgService,

@@ -3,7 +3,7 @@ import { TextField } from 'tns-core-modules/ui/text-field';
 import { Switch } from 'tns-core-modules/ui/switch';
 import { Validators, FormBuilder, FormGroup} from '@angular/forms';
 import { ModalDialogService, ModalDialogOptions } from "nativescript-angular/modal-dialog";
-import { ReservationModalComponent } from "../reservationmodal/reservationmodal.component";
+import { ReservationModalComponent } from '../reservationmodal/reservationmodal.component';
 
 @Component({
     selector: 'app-reservation',
