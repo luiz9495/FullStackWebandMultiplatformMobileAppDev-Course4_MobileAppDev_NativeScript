@@ -4,7 +4,7 @@
 
   <GridLayout tkDrawerContent rows="auto, *" class="sidedrawer sidedrawer-left">
     <GridLayout row="0" class="sidedrawer-header" rows="auto" columns="100, *">
-      <Image row="0" col="0" src="~/app/images/logo.png" class="sidedrawer-header-image"></Image>
+      <Image row="0" col="0" src="res://rcflogo" class="sidedrawer-header-image"></Image>
       <Label row="0" col="1" text="Ristorante con Fusion" class="sidedrawer-header-brand" textWrap="true"></Label>
     </GridLayout>
 
@@ -13,7 +13,7 @@
         <GridLayout columns="*, auto" class="sidedrawer-list-item" (tap)="displayLoginDialog()">
             <Label col="0" [text]="'fa-sign-in' | fonticon" class="sidedrawer-list-item-text fa"></Label>
             <Label col="1" text="Login" class="sidedrawer-list-item-text"></Label>
-        </GridLayout>        
+        </GridLayout>
         <GridLayout columns="*, auto" class="sidedrawer-list-item" [class.selected]="isComponentSelected('/home')" (tap)="onNavItemTap('/home')">
             <Label col="0" [text]="'fa-home' | fonticon" class="sidedrawer-list-item-text fa"></Label>
             <Label col="1" text="Home" class="sidedrawer-list-item-text"></Label>

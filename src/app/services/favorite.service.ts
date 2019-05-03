@@ -13,7 +13,7 @@ export class FavoriteService {
 
     constructor(private dishservice: DishService,
               private couchbaseService: CouchbaseService) {
-//        this.favorites = [];
+      this.favorites = [];
       let doc = this.couchbaseService.getDocument(this.docId);
       if( doc == null) {
         this.couchbaseService.createDocument({"favorites": []}, this.docId);
