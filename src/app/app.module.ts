@@ -28,12 +28,6 @@ import { FavoriteService } from './services/favorite.service';
 import { CouchbaseService } from './services/couchbase.service';
 import { baseURL } from './shared/baseurl';
 
-// Uncomment and add to NgModule imports if you need to use two-way binding
-// import { NativeScriptFormsModule } from "nativescript-angular/forms";
-
-// Uncomment and add to NgModule imports if you need to use the HttpClient wrapper
-// import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
-
 @NgModule({
     bootstrap: [
         AppComponent

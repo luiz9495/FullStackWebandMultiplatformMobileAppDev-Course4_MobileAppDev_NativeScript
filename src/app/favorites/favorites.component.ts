@@ -9,6 +9,7 @@ import { confirm } from "tns-core-modules/ui/dialogs";
 import { Toasty } from 'nativescript-toasty';
 import * as app from "tns-core-modules/application";
 import { RadSideDrawer } from "nativescript-ui-sidedrawer";
+import * as LocalNotifications from 'nativescript-local-notifications';
 
 @Component({
     selector: 'app-favorites',
