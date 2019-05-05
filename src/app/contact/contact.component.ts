@@ -3,6 +3,7 @@ import * as app from "tns-core-modules/application";
 import { RadSideDrawer } from "nativescript-ui-sidedrawer";
 import { TNSFontIconService } from 'nativescript-ngx-fonticon';
 import * as Email from 'nativescript-email';
+import * as Phone from 'nativescript-phone';
 
 @Component({
   selector: 'app-contact',
@@ -34,4 +35,12 @@ export class ContactComponent {
      })
  }
 
+  callRestaurant() {
+    Phone.requestCallPermission('App Needs This Permission To Make Phone Calls')
+      .then(() => {
+        console.log('Permission given to make Phone call');
+        Phone.dial('+852 1234 5678', false);
+      })
+      .catch(() => console.log('No permission to make Phone call'));
+  }
 }
