@@ -16,21 +16,20 @@
 
 </ActionBar>
 
-<GridLayout class="m-5" rows="auto auto">
-
-  <StackLayout class="p-10 border">
-
-    <Label row="0" height="40" class="p-10 h3" text="Contact Information"></Label>
-
-    <StackLayout row="1" class="m-t-10 m-l-20">
-      <Label text="121, Clear Water Bay Road"></Label>
-      <Label text="Clear Water Bay, Kowloon"></Label>
-      <Label text="HONG KONG"></Label>
-      <Label text="Tel: +852 1234 5678"></Label>
-      <Label text="Fax: +852 8765 4321"></Label>
-      <Label text="Email:confusion@food.net"></Label>
-    </StackLayout>
-
+<GridLayout class="m-5" rows="auto, auto">
+  <StackLayout row="0" class="p-10 border">
+    <Label class="h3 text-primary" text="Contact Information"></Label>
+    <Label class="body text-primary" text="
+      121, Clear Water Bay Road
+      Clear Water Bay, Kowloon
+      HONG KONG
+      Tel: +852 1234 5678
+      Fax: +852 8765 4321
+      Email:confusion@food.net" textWrap="true">
+    </Label>
+    <GridLayout row="1" orientation="horizontal" rows="*" columns="*, *" class="m-t-20">
+        <Button row="0" col="0" [text]="('fa-phone' | fonticon) + ' Call'" class="btn btn-rounded-sm btn-outline no-border fa "></Button>
+        <Button row="0" col="1" [text]="('fa-envelope-o' | fonticon) + ' Email'" class="btn btn-rounded-sm btn-outline no-border fa" (tap)="sendEmail()"></Button>
+    </GridLayout>
   </StackLayout>
-
 </GridLayout>
